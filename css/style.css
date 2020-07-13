@@ -1,0 +1,251 @@
+:root {
+    --pinkish: hsl(322, 100%, 66%);
+    --pale-cyan: hsl(193, 100%, 96%);
+    --dark-cyan: hsl(192, 100%, 9%);
+    --grayish-blue: hsl(208, 11%, 55%);
+    --medium: 400;
+    --thick: 700;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(../fonts/Poppins/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url(../fonts/Open-Sans/OpenSans-Regular.ttf);
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+
+/**begin of header area*/
+
+.heading {
+    background: url(../images/bg-hero-mobile.svg);
+    background-color: var(--pale-cyan);
+    background-blend-mode: overlay;
+    background-size: 200px;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-items: space-between;
+}
+
+.logo {
+    width: 105px;
+    height: 17px;
+    margin-top: 7px;
+}
+
+.header-btn {
+    background-color: #fff;
+    border-radius: 19px;
+    color: #000;
+    width: 100px;
+    height: 28px;
+    font-size: 12px;
+    box-shadow: 2px 8px 20px 3px rgba(208, 202, 202, 0.57);
+    float: right;
+}
+
+.header-btn a {
+    color: #000 !important;
+    font-weight: var(--thick);
+}
+
+.header-content {
+    align-self: center;
+    width: 80%;
+    position: relative;
+    top: 40px;
+    bottom: 20px;
+    margin: 8px 0 75px 8px;
+}
+
+.header-content h1 {
+    width: 90%;
+    margin-left: 12px;
+    font-size: 24px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    line-height: 35px;
+    margin-bottom: 25px;
+}
+
+.text-gray {
+    width: 100%;
+    margin-bottom: 25px;
+    font-size: 15px;
+    color: var(--grayish-blue);
+    font-weight: var(--medium);
+}
+
+.btn-ii {
+    margin-bottom: 55px;
+    background-color: var(--pinkish);
+    border: 3px solid var(--pinkish);
+    color: #fff;
+    font-weight: 700;
+    font-size: 13px;
+    font-family: 'Open Sans';
+    width: 80%;
+    height: 40px;
+    border-radius: 19px;
+    box-shadow: 3px 3px 25px rgba(208, 202, 202, 0.57);
+}
+
+.img-small {
+    width: 100%;
+    height: 195px;
+}
+
+
+/**end of header content*/
+
+
+/**begin of features content*/
+
+.features {
+    height: 80%;
+    margin-top: 25px;
+    padding-top: 25px;
+}
+
+.feature {
+    margin: 0 10px 38px 10px;
+    height: 60%;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 15px;
+    box-shadow: -1px 2px 11px 6px #e9ecef;
+    padding: 35px;
+}
+
+.feature img {
+    width: 80%;
+    height: 65%;
+}
+
+.feature h3 {
+    margin-top: 60px;
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    color: black;
+}
+
+.feature p {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 8px;
+    color: var(--grayish-blue);
+    line-height: 20px;
+    font-weight: 400;
+}
+
+
+/**end of features content*/
+
+
+/*displaced box area*/
+
+.ready {
+    position: relative;
+    top: 60px;
+    bottom: 2px;
+    left: 5px;
+    right: 9px;
+    background: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 98%;
+    height: 150px;
+    color: var(--dark-cyan);
+    box-shadow: -3px -3px 11px rgba(208, 202, 202, 0.57);
+}
+
+.get-started {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 45px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 14px;
+    height: 35px;
+    border-radius: 19px;
+    width: 55%;
+    font-size: 11px;
+    padding: 5px 0px 5px;
+}
+
+a,
+a:visited,
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+h4 {
+    font-family: 'Poppins';
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+/*end of displaced box */
+
+
+/*begin of footer area*/
+
+.footer-section {
+    background-color: var(--dark-cyan);
+    color: var(--pale-cyan);
+    padding: 75px 25px 30px 15px;
+    padding-top: 75px;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+}
+
+.footer-logo {
+    color: white;
+    height: 24px;
+    width: 145px;
+    margin-top: 45px;
+    margin-left: 7px;
+}
+
+.info {
+    padding: 0;
+}
+
+.information {
+    flex-wrap: nowrap;
+}
+
+.links {
+    margin: 30px 10px 15px;
+}
+
+li {
+    padding-bottom: 20px;
+}
+
+li a,
+a:visited,
+a:hover {
+    color: var(--pale-cyan);
+    font-size: 16px;
+}
+
+.copyright {
+    font-family: 'Open Sans';
+    /*to be changed to Poppins*/
+    font-size: 12px;
+}
