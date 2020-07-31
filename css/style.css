@@ -170,16 +170,19 @@ body {
 }
 
 .get-started {
+    position: absolute;
+    right: 20px;
+    left: 20px;
+    font-family: 'Open Sans';
+    font-weight: 500;
+    font-size: 11px;
     display: flex;
     flex-direction: column;
-    margin-bottom: 45px;
-    font-family: 'Open Sans';
-    font-weight: 400;
-    font-size: 14px;
+    justify-content: center;
     height: 35px;
-    border-radius: 19px;
     width: 55%;
-    font-size: 11px;
+    border-radius: 19px;
+    margin-bottom: 45px;
     padding: 5px 0px 5px;
 }
 
@@ -240,7 +243,6 @@ li a,
 a:visited,
 a:hover {
     color: var(--pale-cyan);
-    font-size: 16px;
 }
 
 .copyright {
@@ -277,6 +279,7 @@ a:hover {
     }
     .features {
         margin-top: 95px;
+        margin-bottom: 55px;
     }
     .feature {
         display: flex;
@@ -290,13 +293,16 @@ a:hover {
     }
     .feature img {
         padding: 30px 0px 20px;
-        width: 35%;
-        height: 400px;
+        width: 25%;
+        height: 300px;
     }
     .feature-summary {
         width: 40%;
         text-align: left;
         margin-left: -55px;
+    }
+    .feature-summary:nth-child(2) {
+        margin-left: 55px;
     }
     .feature-summary h3 {
         font-size: 24px;
@@ -305,6 +311,28 @@ a:hover {
         font-size: 15px;
         padding: 0;
         line-height: 145%;
+    }
+    .ready {
+        width: 40%;
+        height: 75%;
+        left: 30%;
+    }
+    .ready h4 {
+        font-size: 22px;
+    }
+    .footer-section {
+        display: flex;
+        flex-direction: row;
+        padding-left: 45px;
+    }
+    .get-started {
+        position: absolute;
+        left: 50px;
+        right: 50px;
+        margin-left: 55px !important;
+    }
+    .btn-ii {
+        margin-left: 0px;
     }
 }
 
@@ -340,8 +368,35 @@ a:hover {
         font-size: 32px;
         line-height: 140%;
     }
+    .ready {
+        padding: 65px;
+    }
     .btn-ii {
-        width: 45%;
-        height: 40px;
+        width: 50%;
+        height: 37px;
+        font-size: 13px;
+        font-weight: var(--medium);
+    }
+    .get-started {
+        margin-left: 65px !important;
+        width: 36%;
+        height: 45px;
+        border-radius: 37px;
+    }
+    .column-two {
+        margin-top: 64px;
+    }
+    .copyright {
+        position: relative;
+        right: -73%;
+    }
+}
+
+@media (min-width: 1440px) {
+    .get-started {
+        margin-left: 65px !important;
+    }
+    .feature {
+        width: 89%;
     }
 }
