@@ -7,16 +7,6 @@
     --thick: 700;
 }
 
-@font-face {
-    font-family: 'Poppins';
-    src: url(../fonts/Poppins/Poppins-Bold.ttf);
-}
-
-@font-face {
-    font-family: 'Open Sans';
-    src: url(../fonts/Open-Sans/OpenSans-Regular.ttf);
-}
-
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
